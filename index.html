@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Project</title>
+    <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .nav-link{
+          text-transform: uppercase;
+        }
+        .nav-link:hover{
+          border-bottom: 2px solid green;
+        }
+        nav{
+          box-shadow: 2px -2px 0px 5px rgb(51, 45, 45);
+        }
+        .navbar-brand{
+          margin-right: 44%;
+        }
+        .nav-item{
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+        #head1{
+          font-size: 55px;
+        }
+        .Home{
+          background-image: url(restro_img/restro2.jpg);
+          height: 821px;
+          color: white;
+          background-attachment: fixed;
+        }
+        #header{
+          padding-top: 20em;
+        }
+        #btn{
+          font-size: 25px;
+          margin-top: 2rem;
+          margin-right: 1rem;
+        }
+        .line{
+          width: 100%;
+          height: 8px;
+          background-color: green;
+        }
+        .Menu{
+          background-color: aqua;
+        }
+        .img-menu{
+          height: 250px;
+          width: 500px;
+        }
+        .card-title{
+          font-size: 35px;
+        }
+        .card-text{
+          font-size: 24px;
+          color: rgb(251, 252, 251);
+        }
+        .card:hover{
+          /* transition: .8s; */
+          box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+        .img-slide-show{
+          min-height: 700px;
+          max-height: 700px;
+        }
+        .news{
+          background-color: lightgray;
+        }
+        .card-img1{
+          min-height: 350px;
+          max-height: 350px;
+        }
+        .contact{
+          padding-left: 30%;
+        }
+        .form-control{
+          border: 2px solid grey;
+        }
+        .form-select{
+          border: 2px solid grey;
+        }
+        /* .contact-form{
+          box-sizing: border-box;
+          border-radius: 8px;
+          border: 1px solid grey;
+          margin-bottom: 10px;
+        } */
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-info p-4" style="position: fixed; z-index: 300; width: 100%;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="font-size: 25px;">FoodNeko.Com</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto mr-6" style="align-items: center;">
+              <li class="nav-item mr-6">
+                <a class="nav-link active" aria-current="page" href="/index.html#home">Home</a>
+              </li>
+              <li class="nav-item mr-6">
+                <a class="nav-link" href="/index.html#about">About</a>
+              </li>
+              <li class="nav-item mr-6">
+                <a class="nav-link" href="/index.html#menu">Our Menu</a>
+              </li>
+              <li class="nav-item mr-6">
+                <a class="nav-link" href="/index.html#gallery">Gallery</a>
+              </li>
+              <li class="nav-item mr-6">
+                <a class="nav-link" href="/index.html#news">News</a>
+              </li>
+              <li class="nav-item mr-6">
+                <a class="btn btn-outline-success btn-lg" href="/index.html#contact" role="button">Reservation</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="Home" id="home">
+        <div class="container pt-5" id="header">
+            <div class="row">
+                <div class="col" id="header"><span id="head1" class="mb-5">Restaurant in<br> Jhansi City</span> <div class="d-flex flex-wrap justify-content-center justify-content-md-start">
+                    <a href="#" class="btn btn-warning btn-lg" id="btn">Order Online</a>
+                    <a href="#" class="btn btn-danger btn-lg ml-5" style="color: white;" id="btn">Reservation</a>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="about mb-5" id="about">
+        <div class="container pt-5">
+          <div class="row">
+            <div class="col">
+              <img src="restro_img/restraunt.webp" class="border border-dark rounded img-thumbnail" height="400px" width="700px">
+            </div>
+            <div class="col mt-5">
+              <h1 style="text-transform: uppercase;" class="text-center mb-5">Food-Neko</h1>
+              <h4 class="lh-lg">This is a great place to discover the best tasty food around the world, 
+              you will have the best service.<br>Come Visit Us</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="line"></div>
+
+      <section class="Menu pt-5 pb-5" id="menu">
+        <div class="container text-center">
+          <div class="row">
+            <h1 style="text-transform: uppercase;" class="text-center">Our Menu</h1>
+          </div>
+          <div class="col text-center mt-5">
+            <a href="#" class="btn m-4 btn-outline-danger">ALL</a>    
+            <a href="#" class="btn m-4 btn-outline-warning" style="color: black;">BREAKFAST</a>
+            <a href="#" class="btn m-4 btn-outline-success">LUNCH</a>    
+            <a href="#" class="btn m-4 btn-outline-dark">DINNER</a>
+          </div>
+        </div>
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col">
+              <div class="card mb-3" style="max-width: 600px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="restro_img/manchurian.jpg" class="img-fluid img-thumbnail img-menu" style="padding: 0;" alt="Manchurian">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Manchurian</h5>
+                      <p class="card-text">Our BreakFast</p>
+                      <a href="#" class="btn btn-danger btn-lg m-3" style="text-transform: uppercase;">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-3" style="max-width: 600px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="restro_img/burger.jpg" class="img-fluid img-thumbnail img-menu" style="padding: 0;" alt="Burger">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Burger</h5>
+                      <p class="card-text">Our Lunch</p>
+                      <a href="#" class="btn btn-danger btn-lg m-3" style="text-transform: uppercase;">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col">
+              <div class="card mb-3" style="max-width: 600px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="restro_img/pizza.jpg" class="img-fluid img-thumbnail img-menu" style="padding: 0;" alt="Pizza">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Pizza</h5>
+                      <p class="card-text">Our Dinner</p>
+                      <a href="#" class="btn btn-danger btn-lg m-3" style="text-transform: uppercase;">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-3" style="max-width: 600px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="restro_img/chowmein.jpg" class="img-fluid img-thumbnail img-menu" style="padding: 0;" alt="Chowmein">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Chowmein</h5>
+                      <p class="card-text">Our Lunch</p>
+                      <a href="#" class="btn btn-danger btn-lg m-3" style="text-transform: uppercase;">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <section class="slide-show">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="restro_img/slide1.jpg" class="d-block w-100 img-slide-show" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <div style="font-size: 120px; text-transform: uppercase;" class="mb-5 pb-5">Veg<br>Barbecue</div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="restro_img/slide2.webp" class="d-block img-slide-show w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <div style="font-size: 120px; text-transform: uppercase;" class="mb-5 pb-5">Grilled<br>Burger</div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="restro_img/slide3.jpg" class="d-block w-100 img-slide-show" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <div style="font-size: 120px; text-transform: uppercase;" class="mb-5 pb-5">Chesse<br>sandwich</div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="height: 75px; width: 75px;"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true" style="height: 75px; width: 75px;"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="Gallery mt-5" id="gallery">
+        <h1 class="text-center mb-5" style="text-transform: uppercase; letter-spacing: 5px;">Gallery</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <img src="restro_img/restro_About.webp" alt="" height="600px" width="700px" class="img-fluid pr-5 pl-5">
+            </div>
+          </div>
+        </div>
+        <h1 class="text-center"><a class="btn btn-danger btn-lg mt-5 p-3 pl-5 pr-5" style="font-size: 25px;" role="button" href="#">Reservation</a></h1>
+      </section>
+
+      <section class="news pt-5 mt-5 pb-5 mb-5" id="news">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="card text-bg-dark mb-3 mt-3">
+                <img src="restro_img/restraunt1.jpg" class="card-img1" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Another Branch</h5>
+                  <p class="card-text"><strong>Another branch is in Orcha, situated 1.5km from the Ram Raja Temple</strong></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-bg-dark mb-3 mt-3">
+                <img src="restro_img/newmeal.jpg" class="card-img1" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">New Meal</h5>
+                  <p class="card-text"><strong>A new meal that is wating to be devoured by all of you, so make the reservations and try our delicious New Meal</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1 class="text-center"><a class="btn btn-outline-warning btn-lg mt-5 p-3 pl-5 pr-5" style="font-size: 25px; color: black;" role="button" href="#">News Archive</a></h1>
+      </section>
+
+      <section class="contact m-4" id="contact">
+        <div class="'container" style="width: 60%;">
+          <div class="row">
+            <div class="col">
+              <form class="row g-3 contact-form" novalidate>
+                <div class="col-md-4">
+                  <label for="fname" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="fname" placeholder="First Name" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="lname" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="lname" placeholder="Last Name" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="cntct" class="form-label">Contact</label>
+                  <div class="input-group has-validation">
+                    <input type="number" class="form-control" id="cntct" aria-describedby="validationTooltipUsernamePrepend" placeholder="Contact No." required>
+                  </div>
+                </div>              
+                <div class="col-md-8">
+                  <label for="Eml" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="Eml" placeholder="good@xyz.com" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="ppl" class="form-label">For</label>
+                  <select class="form-select" id="ppl" required>
+                    <option selected>1-2 people</option>
+                    <option value="1">2-4 people</option>
+                    <option value="2">4-8 people</option>
+                    <option value="3">8-12 people</option>
+                  </select>
+                </div>
+                <div class="col-12 text-center">
+                  <button class="btn btn-success btn-lg" type="submit">Make Reservation</button>
+                </div>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="line"></div>
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <script src="Bootstrap/js/jquery-3.7.0.js"></script>
+</body>
+</html>
